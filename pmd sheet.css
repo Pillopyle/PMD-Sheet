@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap');
+
+.charsheet .stats{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 0;
+  max-width: 500px;
+}
+
+.charsheet .stateeblock{
+  display: flex;
+  width: 150px;
+  height: 150px;
+  z-index: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 5px;
+  margin: 50px;
+}
+
+.charsheet .stateeblock > label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.charsheet #starpic{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  z-index: 1;
+}
+
+.charsheet * {
+  font-family: 'VT323', Arial;
+  font-size: large;
+}
+
+.charsheet textarea{
+  max-width: 360px;
+}
+
+.charsheet .grid{
+    display: grid;
+    grid-template-columns: 420px 520px 300px;
+    grid-template-rows: 400px 800px 400px;
+    grid-template-areas:"skills levelblock    future"
+                        "prof   stattracker   held"
+                        "traits activemoveset inventory";
+    grid-gap: 5px;
+}
+
+.charsheet .centre{  
+    text-align: center;
+  }
+
+.charsheet span{
+    font-weight: bold;
+  }
+
+.charsheet .valign{
+    vertical-align: middle;
+  }
+
+.charsheet .top{
+    vertical-align:top;
+  }
+
+.charsheet .leftcollumn{
+    width: 400px;
+    align-self: left;
+}
+.charsheet .midcollumn{
+    justify-content: center;
+    align-self: center;
+    margin-top: 760px;
+    margin-right: 20px;
+}
+.charsheet .rightcollumn{
+    width: 400px;
+    align-self: right;
+}
+
+.charsheet .stats{
+  width: auto;
+  margin: auto;
+}
+
+.charsheet .statblock{
+  border-radius: 10px;
+  display: inline-block;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-style: solid;
+  padding: 5px;
+  margin: 5px;
+}
+
+.charsheet #hp{
+  float: left;
+}
+
+.charsheet #number{
+  width: 55px;
+}
+
+.charsheet .move, .skills, .prof, .traits, .future, .held, .inventory{
+  border-radius: 10px;
+  border-style: solid;
+  padding: 5px;
+  margin: 5px;
+}
+
+.charsheet .levelblock{
+  border-radius: 10px;
+  border-style: solid;
+  padding: 5px;
+  margin: auto;
+  width: 320px;
+}
+
+.charsheet .stattracker{
+  padding: 5px;
+  margin-left: 110px;
+}
+
+.charsheet .lvling .statblock{
+  border-radius: 100px;
+  border-style: solid;
+  width: auto;
+  margin: auto;
+  padding: 20px;
+}
+
+.charsheet .hpnbelly{
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.charsheet .othertrackers{
+  padding: 5px;
+  margin: auto;
+}
+
+.charsheet .skills {
+  position: relative;
+}
+
+.charsheet .skills input{
+  position: absolute;
+  right: 0;
+}
+
+.charsheet #center{
+  text-align: center;
+}

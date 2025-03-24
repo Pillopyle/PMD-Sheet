@@ -1,0 +1,218 @@
+<div class="stats">
+    <div class="stateeblock" id="atckstatblock">
+        <img src="https://icons.veryicon.com/png/o/miscellaneous/greedy-college-icon-library/star-hollow-1.png" id="starpic"/>
+        <input type="number" name="attr_attackstat" min="0" value="0" id="number">
+        <label for="attackstat">ATK</label>
+    </div>
+    
+    <div class="stateeblock">
+        <img src="https://icons.veryicon.com/png/o/miscellaneous/greedy-college-icon-library/star-hollow-1.png" id="starpic"/>
+        <input type="number" name="attr_defensestat" min="0" value="0" id="number">
+        <label for="defensestat">DEF</label>
+    </div>
+
+    <div class="statblock">
+        <img src="https://drive.google.com/file/d/18dddlU7pkSpibPb91VJ69PXk4mvBD_Di/view?usp=drive_link">
+        <label for="charname">Character Name:</label><br>
+        <input type="text" name="attr_charname"><br>
+    </div>
+
+    <div class="stateeblock">
+        <img src="https://icons.veryicon.com/png/o/miscellaneous/greedy-college-icon-library/star-hollow-1.png" id="starpic"/>
+        <input type="number" name="attr_spattackstat" min="0" value="0" id="number">
+        <label for="spattackstat">S ATK</label>
+    </div>
+    
+    <div class="stateeblock">
+        <img src="https://icons.veryicon.com/png/o/miscellaneous/greedy-college-icon-library/star-hollow-1.png" id="starpic"/>
+        <input type="number" name="attr_spdefensestat" min="0" value="0" id="number">
+        <label for="attr_spdefensestat">S DEF</label>
+    </div>
+</div>
+
+<div class="grid">
+<div class="leftcollumn">
+    <div class="skills">
+        <span>SKILLS</span><br>
+        <label for="attr_athletics">Athletics: <input type="number" name="attr_athletics" min="0" value="0" id="number"></label><br>
+        <label for="attr_craft">Craft: <input type="number" name="attr_craft" min="0" value="0" id="number"></label><br>
+        <label for="attr_end">Endurance: <input type="number" name="attr_end" min="0" value="0" id="number"></label><br>
+        <label for="attr_fin">Finesse: <input type="number" name="attr_fin" min="0" value="0" id="number"></label><br>
+        <label for="attr_med">Medicine: <input type="number" name="attr_med" min="0" value="0" id="number"></label><br>
+        <label for="attr_percep">Perception: <input type="number" name="attr_percep" min="0" value="0" id="number"></label><br>
+        <label for="attr_perform">Performance: <input type="number" name="attr_perform" min="0" value="0" id="number"></label><br>
+        <label for="attr_pers">Persuasion: <input type="number" name="attr_pers" min="0" value="0" id="number"></label><br>
+        <label for="attr_spknow">Sp. Knowledge: <input type="number" name="attr_spknow" min="0" value="0" id="number"></label><br>
+        <label for="attr_stealth">Stealth: <input type="number" name="attr_stealth" min="0" value="0" id="number"></label><br>
+        <label for="attr_surv">Survival: <input type="number" name="attr_surv" min="0" value="0" id="number"></label>
+    </div>
+
+    <div class="prof">
+        <label for="attr_profass" id="center">Proficiencies & Assets</label>
+        <textarea name="attr_profass"></textarea>
+    </div>
+
+    <div class="traits">
+        <label for="attr_traits" id="center">Traits</label>
+        <textarea name="attr_traits"></textarea>
+    </div>
+</div>
+
+<div class="midcollumn">
+    <div class="levelblock">
+        <div class="lvling">
+            <div class="statblock">
+                <input type="number" name="attr_lvl" min="0" value="0" id="number">
+                <label for="attr_lvl">LEVEL</label>
+            </div>
+            <div class="statblock">
+                <input type="number" name="attr_exp" min="0" value="0" id="number">
+                <label for="attr_exp">EXP</label>
+            </div>
+            <div class="statblock">
+                <input type="number" name="attr_lp" min="0" value="0" id="number">
+                <label for="attr_lp">LP</label>
+            </div>
+        </div>
+
+        <div class="bckg">
+            <label for="attr_species">Species: <input type="text" name="attr_species"></label>
+            <label for="attr_type">Type: <input type="text" name="attr_type"></label>
+            <label for="attr_bckg">Background: <input type="text" name="attr_bckg"></label>
+            <label for="attr_ability">Ability: <input type="text" name="attr_ability"></label>
+        </div>
+    </div>
+    
+    <div class="stattracker">
+        <div class="hpnbelly">
+            <div class="statblock">
+                <label for="attr_currenthp">HP: </label>
+                <input type="number" name="attr_currenthp" min="0" value="0" id="number"><span>/</span><input type="number" name="attr_maxhp" min="0" value="0" id="number">
+            </div>
+
+            <div class="statblock">
+                <input type="number" name="attr_belly" min="0" value="0" id="number"><span>%</span><br>
+                <label for="attr_belly">BELLY</label>
+            </div>
+        </div>
+
+        <div class="othertrackers">
+            <div class="statblock">
+                <label for="attr_stab">STAB</label>
+                <input type="number" name="attr_stab" min="0" value="0" id="number">
+            </div>
+            <div class="statblock">
+                <label for="attr_basic">BASIC</label>
+                <input type="number" name="attr_basic" min="0" value="0" id="number">
+            </div>
+            <div class="statblock">
+                <label for="attr_speed">SPEED</label>
+                <input type="number" name="attr_speed" min="0" value="0" id="number">
+            </div>
+        </div>
+    </div>
+
+    <div class="activemoveset">
+        <span>ACTIVE MOVESET</span><br>
+        <div class="move">
+            <span for="attr_move1">Move: <input type="text" name="attr_move1"></span>
+            
+            <span for="attr_pp1">PP: <input type="number" name="attr_pp1" min="0" value="0" id="number"></span>
+            <br>
+            <span for="attr_dmg1">Damage: <input type="number" name="attr_dmg1" min="0" value="0" id="number"></span>
+            
+            <span for="attr_atktype1">Type: <input type="text" name="attr_atktype1"></span>
+            
+            <span for="attr_acc1">Acc: <input type="number" name="attr_acc1" min="0" value="0" id="number"></span>
+            <br>
+            <span for="attr_cat1">Category: <input type="text" name="attr_cat1"></span>
+            
+            <span for="attr_range1">Range: <input type="number" name="attr_range1" min="0" value="0" id="number"></span>
+            <br>
+            <span for="attr_effect1">Effect: <input type="text" name="attr_effect1"></span>
+        </div>
+        <div class="move">
+            <span for="attr_move2">Move: <input type="text" name="attr_move2"></span>
+            
+            <span for="attr_pp2">PP: <input type="number" name="attr_pp2" min="0" value="0" id="number"></span>
+            <br>
+            <span for="attr_dmg2">Damage: <input type="number" name="attr_dmg2" min="0" value="0" id="number"></span>
+            
+            <span for="attr_atktype2">Type: <input type="text" name="attr_atktype2"></span>
+            
+            <span for="attr_acc2">Acc: <input type="number" name="attr_acc2" min="0" value="0" id="number"></span>
+            <br>
+            <span for="attr_cat2">Category: <input type="text" name="attr_cat2"></span>
+            
+            <span for="attr_range2">Range: <input type="number" name="attr_range2" min="0" value="0" id="number"></span>
+            <br>
+            <span for="attr_effect2">Effect: <input type="text" name="attr_effect2"></span>
+            
+        </div>
+        <div class="move">
+            <span for="attr_move3">Move: <input type="text" name="attr_move3"></span>
+            
+            <span for="attr_pp3">PP: <input type="number" name="attr_pp3" min="0" value="0" id="number"></span>
+            <br>
+            <span for="attr_dmg3">Damage: <input type="number" name="attr_dmg3" min="0" value="0" id="number"></span>
+            
+            <span for="attr_atktype3">Type: <input type="text" name="attr_atktype3"></span>
+            
+            <span for="attr_acc3">Acc: <input type="number" name="attr_acc3" min="0" value="0" id="number"></span>
+            <br>
+            <span for="attr_cat3">Category: <input type="text" name="attr_cat3"></span>
+            
+            <span for="attr_range3">Range: <input type="number" name="attr_range3" min="0" value="0" id="number"></span>
+            <br>
+            <span for="attr_effect3">Effect: <input type="text" name="attr_effect3"></span>
+            
+        </div>
+        <div class="move">
+            <span for="attr_move4">Move: <input type="text" name="attr_move4"></span>
+            
+            <span for="attr_pp4">PP: <input type="number" name="attr_pp4" min="0" value="0" id="number"></span>
+            <br>
+            <span for="attr_dmg4">Damage: <input type="number" name="attr_dmg4" min="0" value="0" id="number"></span>
+            
+            <span for="attr_atktype4">Type: <input type="text" name="attr_atktype4"></span>
+            
+            <span for="attr_acc4">Acc: <input type="number" name="attr_acc4" min="0" value="0" id="number"></span>
+            <br>
+            <span for="attr_cat4">Category: <input type="text" name="attr_cat4"></span>
+            
+            <span for="attr_range4">Range: <input type="number" name="attr_range4" min="0" value="0" id="number"></span>
+            <br>
+            <span for="attr_effect4">Effect: <input type="text" name="attr_effect4"></span>
+            
+        </div>
+    </div>
+</div>
+
+<div class="rightcollumn">
+    <div class="future">
+        <div class="destiny">
+            <label for="attr_destiny" id="center">Destiny (Lv 5)</label>
+            <textarea name="attr_destiny"></textarea>
+        </div>
+
+        <div class="legend">
+            <label for="attr_legend" id="center">Legend (Lv 15)</label>
+            <textarea name="attr_legend"></textarea>
+        </div>
+    </div>
+
+    <div class="held">
+        <label for="attr_held" id="center">Held Item</label>
+        <textarea name="attr_held"></textarea>
+    </div>
+
+    <div class="inventory">
+        <label for="attr_inv" id="center">Inventory</label>
+        <textarea name="attr_inv"></textarea>
+        <div class="poke">
+            <label for="attr_poke">Poké</label>
+            <input type="text" name="attr_poke">
+        </div>
+    </div>
+</div>
+</div>
