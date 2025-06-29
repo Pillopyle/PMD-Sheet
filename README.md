@@ -1,0 +1,3 @@
+This is an unofficial Pokemon Mystery Dungeon: Explorers of Fate character sheet made for Roll20!
+i'm an amateur when it comes to code so bear with the formatting and such, please send any and all questions/suggestions/bug reports to @pillopyle on discord
+In order to use the macros for damage calculation, you have to manually input each one by using the right sidebar and selecting the fifth tab, then adding each macro individually, first by name, and then by inputting the code underneath into the Actions field. MAKE SURE YOU INPUT THE NAMES AS LISTED. Ensure when using the macros that you have a character token selected beforehand.
