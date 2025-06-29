@@ -2,31 +2,30 @@
     <div class="stateeblock" id="atckstatblock">
         <img src="https://icons.veryicon.com/png/o/miscellaneous/greedy-college-icon-library/star-hollow-1.png" id="starpic"/>
         <input type="number" name="attr_attackstat" min="0" value="0" id="number">
-        <label for="attackstat">ATK</label>
+        <span for="attackstat">ATK</span>
     </div>
     
     <div class="stateeblock">
         <img src="https://icons.veryicon.com/png/o/miscellaneous/greedy-college-icon-library/star-hollow-1.png" id="starpic"/>
         <input type="number" name="attr_defensestat" min="0" value="0" id="number">
-        <label for="defensestat">DEF</label>
+        <span for="defensestat">DEF</span>
     </div>
 
-    <div class="statblock">
-        <img src="https://drive.google.com/file/d/18dddlU7pkSpibPb91VJ69PXk4mvBD_Di/view?usp=drive_link">
-        <label for="charname">Character Name:</label><br>
+    <div class="stateeblock">
+        <span for="charname">Character Name:</span><br>
         <input type="text" name="attr_charname"><br>
     </div>
 
     <div class="stateeblock">
         <img src="https://icons.veryicon.com/png/o/miscellaneous/greedy-college-icon-library/star-hollow-1.png" id="starpic"/>
         <input type="number" name="attr_spattackstat" min="0" value="0" id="number">
-        <label for="spattackstat">S ATK</label>
+        <span for="spattackstat">S ATK</span>
     </div>
     
     <div class="stateeblock">
         <img src="https://icons.veryicon.com/png/o/miscellaneous/greedy-college-icon-library/star-hollow-1.png" id="starpic"/>
         <input type="number" name="attr_spdefensestat" min="0" value="0" id="number">
-        <label for="attr_spdefensestat">S DEF</label>
+        <span for="attr_spdefensestat">S DEF</span>
     </div>
 </div>
 
@@ -34,17 +33,17 @@
 <div class="leftcollumn">
     <div class="skills">
         <span>SKILLS</span><br>
-        <label for="attr_athletics">Athletics: <input type="number" name="attr_athletics" min="0" value="0" id="number"></label><br>
-        <label for="attr_craft">Craft: <input type="number" name="attr_craft" min="0" value="0" id="number"></label><br>
-        <label for="attr_end">Endurance: <input type="number" name="attr_end" min="0" value="0" id="number"></label><br>
-        <label for="attr_fin">Finesse: <input type="number" name="attr_fin" min="0" value="0" id="number"></label><br>
-        <label for="attr_med">Medicine: <input type="number" name="attr_med" min="0" value="0" id="number"></label><br>
-        <label for="attr_percep">Perception: <input type="number" name="attr_percep" min="0" value="0" id="number"></label><br>
-        <label for="attr_perform">Performance: <input type="number" name="attr_perform" min="0" value="0" id="number"></label><br>
-        <label for="attr_pers">Persuasion: <input type="number" name="attr_pers" min="0" value="0" id="number"></label><br>
-        <label for="attr_spknow">Sp. Knowledge: <input type="number" name="attr_spknow" min="0" value="0" id="number"></label><br>
-        <label for="attr_stealth">Stealth: <input type="number" name="attr_stealth" min="0" value="0" id="number"></label><br>
-        <label for="attr_surv">Survival: <input type="number" name="attr_surv" min="0" value="0" id="number"></label>
+        <label for="attr_athletics">Athletics: <input type="number" name="attr_athletics" min="0" value="0" id="number"><button type="roll" value="/roll 1d100" name="roll_athleticsCheck"></button></label><br>
+        <label for="attr_craft">Craft: <input type="number" name="attr_craft" min="0" value="0" id="number"><button type="roll" value="/roll 1d100" name="roll_craftCheck"></button></label><br>
+        <label for="attr_end">Endurance: <input type="number" name="attr_end" min="0" value="0" id="number"><button type="roll" value="/roll 1d100" name="roll_endCheck"></button></label><br>
+        <label for="attr_fin">Finesse: <input type="number" name="attr_fin" min="0" value="0" id="number"><button type="roll" value="/roll 1d100" name="roll_finCheck"></button></label><br>
+        <label for="attr_med">Medicine: <input type="number" name="attr_med" min="0" value="0" id="number"><button type="roll" value="/roll 1d100" name="roll_medCheck"></button></label><br>
+        <label for="attr_percep">Perception: <input type="number" name="attr_percep" min="0" value="0" id="number"><button type="roll" value="/roll 1d100" name="roll_percep"></button></label><br>
+        <label for="attr_perform">Performance: <input type="number" name="attr_perform" min="0" value="0" id="number"><button type="roll" value="/roll 1d100" name="roll_performCheck"></button></label><br>
+        <label for="attr_pers">Persuasion: <input type="number" name="attr_pers" min="0" value="0" id="number"><button type="roll" value="/roll 1d100" name="roll_persCheck"></button></label><br>
+        <label for="attr_spknow">Sp. Knowledge: <input type="number" name="attr_spknow" min="0" value="0" id="number"><button type="roll" value="/roll 1d100" name="roll_spknow"></button></label><br>
+        <label for="attr_stealth">Stealth: <input type="number" name="attr_stealth" min="0" value="0" id="number"><button type="roll" value="/roll 1d100" name="roll_stealthCheck"></button></label><br>
+        <label for="attr_surv">Survival: <input type="number" name="attr_surv" min="0" value="0" id="number"><button type="roll" value="/roll 1d100" name="roll_survCheck"></button></label>
     </div>
 
     <div class="prof">
@@ -130,11 +129,16 @@
             <span for="attr_range1">Range: <input type="number" name="attr_range1" min="0" value="0" id="number"></span>
             <br>
             <span for="attr_effect1">Effect: <input type="text" name="attr_effect1"></span>
+            <br>
+            <span>Accuracy + Crit:</span><button type="roll" value="/roll 1d100 + 1d10" name="roll_hit1"></button>
+
+            <span>Damage:</span><button type="roll" value="?{Select bonuses|None,#one-normal |Crit,#one-single |Same type,#one-single |Crit and same type,#one-double }" name="roll_dmg1"></button>
         </div>
         <div class="move">
             <span for="attr_move2">Move: <input type="text" name="attr_move2"></span>
             
             <span for="attr_pp2">PP: <input type="number" name="attr_pp2" min="0" value="0" id="number"></span>
+
             <br>
             <span for="attr_dmg2">Damage: <input type="number" name="attr_dmg2" min="0" value="0" id="number"></span>
             
@@ -147,12 +151,17 @@
             <span for="attr_range2">Range: <input type="number" name="attr_range2" min="0" value="0" id="number"></span>
             <br>
             <span for="attr_effect2">Effect: <input type="text" name="attr_effect2"></span>
+            <br>
+            <span>Accuracy + Crit:</span><button type="roll" value="/roll 1d100 + 1d10" name="roll_hit2"></button>
+
+            <span>Damage:</span><button type="roll" value="?{Select bonuses|None,#two-normal |Crit,#two-single |Same type,#two-single |Crit and same type,#two-double }" name="roll_dmg2"></button>
             
         </div>
         <div class="move">
             <span for="attr_move3">Move: <input type="text" name="attr_move3"></span>
             
             <span for="attr_pp3">PP: <input type="number" name="attr_pp3" min="0" value="0" id="number"></span>
+
             <br>
             <span for="attr_dmg3">Damage: <input type="number" name="attr_dmg3" min="0" value="0" id="number"></span>
             
@@ -165,6 +174,10 @@
             <span for="attr_range3">Range: <input type="number" name="attr_range3" min="0" value="0" id="number"></span>
             <br>
             <span for="attr_effect3">Effect: <input type="text" name="attr_effect3"></span>
+            <br>
+            <span>Accuracy + Crit:</span><button type="roll" value="/roll 1d100 + 1d10" name="roll_hit3"></button>
+
+            <span>Damage:</span><button type="roll" value="?{Select bonuses|None,#three-normal |Crit,#three-single |Same type,#three-single |Crit and same type,#three-double }" name="roll_dmg3"></button>
             
         </div>
         <div class="move">
@@ -183,6 +196,10 @@
             <span for="attr_range4">Range: <input type="number" name="attr_range4" min="0" value="0" id="number"></span>
             <br>
             <span for="attr_effect4">Effect: <input type="text" name="attr_effect4"></span>
+            <br>
+            <span>Accuracy + Crit:</span><button type="roll" value="/roll 1d100 + 1d10" name="roll_hit4"></button>
+
+            <span>Damage:</span><button type="roll" value="?{Select bonuses|None,#four-normal |Crit,#four-single |Same type,#four-single |Crit and same type,#four-double }" name="roll_dmg4"></button>
             
         </div>
     </div>

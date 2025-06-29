@@ -1,0 +1,63 @@
+use-move-one
+
+?{Select bonuses|None,#one-normal |Crit,#one-single |Same type,#one-single |Crit and same type,#one-double }
+
+one-normal
+
+[[ @{selected|attackstat} + @{selected|dmg1} ]] @{selected|atktype1} damage dealt.
+
+one-single
+
+[[ ( @{selected|attackstat} + @{selected|dmg1} )*1.5 ]] @{selected|atktype1} damage dealt.
+
+one-double
+
+[[ (( @{selected|attackstat} + @{selected|dmg1} )*1.5)*1.5 ]] @{selected|atktype1} damage dealt!
+
+use-move-two
+
+?{Select bonuses|None,#two-normal |Crit,#two-single |Same type,#two-single |Crit and same type,#two-double }
+
+two-normal
+
+[[ @{selected|attackstat} + @{selected|dmg2} ]] @{selected|atktype2} damage dealt.
+
+two-single
+
+[[ ( @{selected|attackstat} + @{selected|dmg2} )*1.5 ]] @{selected|atktype2} damage dealt.
+
+two-double
+
+[[ (( @{selected|attackstat} + @{selected|dmg2} )*1.5)*1.5 ]] @{selected|atktype2} damage dealt!
+
+use-move-three
+
+?{Select bonuses|None,#three-normal |Crit,#three-single |Same type,#three-single |Crit and same type,#three-double }
+
+three-normal
+
+[[ @{selected|attackstat} + @{selected|dmg3} ]] @{selected|atktype3} damage dealt.
+
+three-single
+
+[[ ( @{selected|attackstat} + @{selected|dmg3} )*1.5 ]] @{selected|atktype3} damage dealt.
+
+three-double
+
+[[ (( @{selected|attackstat} + @{selected|dmg3} )*1.5)*1.5 ]] @{selected|atktype3} damage dealt!
+
+use-move-four
+
+?{Select bonuses|None,#four-normal |Crit,#four-single |Same type,#four-single |Crit and same type,#four-double }
+
+four-normal
+
+[[ @{selected|attackstat} + @{selected|dmg4} ]] @{selected|atktype4} damage dealt.
+
+four-single
+
+[[ ( @{selected|attackstat} + @{selected|dmg4} )*1.5 ]] @{selected|atktype4} damage dealt.
+
+four-double
+
+[[ (( @{selected|attackstat} + @{selected|dmg4} )*1.5)*1.5 ]] @{selected|atktype4} damage dealt!

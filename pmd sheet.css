@@ -1,38 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap');
 
 .charsheet .stats{
-  flex-direction: row;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-grow: 0;
-  max-width: 500px;
+  display: inline-block;
+  text-align: center;
+  width: 100px;
 }
 
 .charsheet .stateeblock{
-  display: flex;
+  display: inline-flex;
   width: 150px;
   height: 150px;
-  z-index: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border: none;
   padding: 5px;
-  margin: 50px;
-}
-
-.charsheet .stateeblock > label{
-  display: flex;
+  margin-right: 45px;
+  margin-bottom: 50px;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.charsheet .stateeblock > input{
+  height: 35px;
 }
 
 .charsheet #starpic{
   width: 150px;
   height: 150px;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
 }
 
 .charsheet * {
@@ -41,12 +36,12 @@
 }
 
 .charsheet textarea{
-  max-width: 360px;
+  max-width: 210px;
 }
 
 .charsheet .grid{
     display: grid;
-    grid-template-columns: 420px 520px 300px;
+    grid-template-columns: 260px 500px 260px;
     grid-template-rows: 400px 800px 400px;
     grid-template-areas:"skills levelblock    future"
                         "prof   stattracker   held"
@@ -71,17 +66,16 @@
   }
 
 .charsheet .leftcollumn{
-    width: 400px;
+    width: 250px;
     align-self: left;
 }
 .charsheet .midcollumn{
     justify-content: center;
     align-self: center;
     margin-top: 760px;
-    margin-right: 20px;
 }
 .charsheet .rightcollumn{
-    width: 400px;
+    width: 250px;
     align-self: right;
 }
 
